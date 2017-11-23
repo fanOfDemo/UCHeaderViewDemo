@@ -25,7 +25,6 @@ allprojects {
         }
     }
 }
-tasks.getByPath(":collapsingdoubleheadbarlayout:javadoc").enabled = false
 
 task clean(type: Delete) {
     delete rootProject.buildDir
