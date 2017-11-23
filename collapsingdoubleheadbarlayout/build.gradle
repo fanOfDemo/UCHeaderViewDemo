@@ -56,7 +56,7 @@ dependencies {
 
 def siteUrl = 'https://github.com/fanOfDemo/UCHeaderViewDemo'            // 项目的主页
 def gitUrl = 'https://github.com/fanOfDemo/UCHeaderViewDemo.git'   // Git仓库的url
-group = "com.ym.widget.layout.collapsingdoubleheadbarlayout" // Maven Group ID for the artifact，一般填你唯一的包名
+group = "com.ym.widget.layout" // Maven Group ID for the artifact，一般填你唯一的包名
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
@@ -64,13 +64,13 @@ install {
             project {
                 packaging 'aar'
                 // Add your description here
-                name 'collapsingdoubleheadbarlayout'  //项目描述
+                name 'designlayout'  //项目描述
                 url siteUrl
                 // Set your license
                 licenses {
                     license {
-                        name 'Apache License Version 2.0'
-                        url 'http://www.apache.org/licenses/'
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
                     }
                 }
                 developers {
@@ -96,8 +96,6 @@ task sourcesJar(type: Jar) {
 }
 
 
-
-//tasks.findByPath(":FloatMenu:androidJavadocs").enabled = false
 
 task javadoc(type: Javadoc) {
     options.encoding = "utf-8"
@@ -126,10 +124,17 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "collapsingdoubleheadbarlayout"
+        name = "designlayout"
         websiteUrl = siteUrl
         vcsUrl = gitUrl
-        licenses = ["Apache License Version 2.0"]
+        licenses = ["Apache-2.0"]
         publish = true
+    }
+
+    javadoc { //jav doc采用utf-8编码否则会报“GBK的不可映射字符”错误
+        options{
+            encoding "UTF-8"
+            charSet 'UTF-8'
+        }
     }
 }

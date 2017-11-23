@@ -20,8 +20,8 @@
             android:id="@+id/collapsHeaderbar"
             android:layout_width="match_parent"
             android:layout_height="@dimen/app_bar_height"
-            app:bottomLayoutId="@+id/bootom"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:bottomLayoutId="@+id/bootom"
             app:topLayoutId="@+id/title">
 
             <ImageView
