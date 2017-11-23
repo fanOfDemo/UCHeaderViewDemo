@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.ym.app.demo.layout.ArrowBackgroundLayout;
-import com.ym.app.demo.layout.CollapsingDoubleHeadbarLayout;
+import com.ym.widget.layout.collapsingdoubleheadbarlayout.CollapsingDoubleHeadbarLayout;
 
 public class ScrollingActivity extends AppCompatActivity {
 

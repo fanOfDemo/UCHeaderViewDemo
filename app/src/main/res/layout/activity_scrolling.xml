@@ -16,13 +16,13 @@
         android:background="@android:color/transparent"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <com.ym.app.demo.layout.CollapsingDoubleHeadbarLayout
+        <com.ym.widget.layout.collapsingdoubleheadbarlayout.CollapsingDoubleHeadbarLayout
             android:id="@+id/collapsHeaderbar"
             android:layout_width="match_parent"
             android:layout_height="@dimen/app_bar_height"
-            app:bootomLayoutId="@id/bootom"
+            app:bottomLayoutId="@+id/bootom"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-            app:topLayoutId="@id/title">
+            app:topLayoutId="@+id/title">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -52,7 +52,7 @@
                 android:textColor="@android:color/black"
                 />
 
-        </com.ym.app.demo.layout.CollapsingDoubleHeadbarLayout>
+        </com.ym.widget.layout.collapsingdoubleheadbarlayout.CollapsingDoubleHeadbarLayout>
 
 
     </android.support.design.widget.AppBarLayout>
