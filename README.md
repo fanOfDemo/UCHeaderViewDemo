@@ -1,5 +1,5 @@
 # UCHeaderViewDemo
-高仿UC头部动画，杀鸡无需牛刀
+高仿UC头部动画，杀鸡焉用牛刀
 
 
 <video id="video" controls="" preload="none" poster="https://github.com/fanOfDemo/UCHeaderViewDemo/blob/master/demo/device-2017-11-23-171305.png">
